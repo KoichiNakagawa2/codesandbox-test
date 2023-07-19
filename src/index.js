@@ -140,3 +140,6 @@ console.log(arr3);
 console.log(num2);
 
 const arr8 = arr2;
+cosole.log(arr8);
+console.log(arr2);
+
