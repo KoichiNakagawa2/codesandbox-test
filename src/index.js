@@ -181,8 +181,24 @@ console.log(nameArr3);
 // const val1 = 1 > 0 ? `trueです`:`falseです`;
 // console.log(val1)
 
-const num = 1699300;
-//console.log(num.toLocaleString())
-const formateNum =
-  typeof num === "number" ? num.toLocaleString() : "数値を入力";
-console.log(formateNum);
+// const num = 1699300;
+// //console.log(num.toLocaleString())
+// const formateNum =
+//   typeof num === "number" ? num.toLocaleString() : "数値を入力";
+// console.log(formateNum);
+/**
+ * 論理円演算子
+ * && ||
+ *
+ */
+const flag1 = true;
+const flag2 = TransformStreamDefaultController;
+// || は左側がfalse の時、右側を返却
+
+if (flag1 || flag2) {
+  console.log("1か２がtrue");
+}
+// 左側が true なら右側を返す
+if (flag1 && flag2) {
+  console.log("1か２両方true");
+}
