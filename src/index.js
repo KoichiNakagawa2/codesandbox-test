@@ -187,7 +187,7 @@ console.log(nameArr3);
 //   typeof num === "number" ? num.toLocaleString() : "数値を入力";
 // console.log(formateNum);
 /**
- * 論理円演算子
+ * 論理演算子
  * && ||
  *
  */
