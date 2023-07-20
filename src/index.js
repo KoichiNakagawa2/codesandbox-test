@@ -131,12 +131,58 @@
 // sumFunc(...arr1);
 
 //展開の反対でまとめる
-const arr2 = [1, 2, 3, 4, 5, 6, 7];
-const [num1, num2, ...arr3] = arr2;
-console.log(num1);
-console.log(num2);
-console.log(arr3);
+// const arr2 = [1, 2, 3, 4, 5, 6, 7];
+// const [num1, num2, ...arr3] = arr2;
+// console.log(num1);
+// console.log(num2);
+// console.log(arr3);
 
-console.log(num2);
+// console.log(num2);
 
-const arr8 = arr2;
+// const arr8 = arr2;
+/**
+ * map やフィルター
+ *
+ *
+ */
+const nameArr = ["たな", "やま", "なか"];
+//  for (let index = 0; index < nameArr.length;index++){
+
+//    console.log(`${index}番目は${nameArr[index]}`);
+//  }
+// const nameArr2 = nameArr.map((name)=>{
+//   return name ;
+// })
+// console.log(nameArr2);
+//nameArr.map((name,index) => console.log(`${index}番目は${name}です`));
+
+// const numArr = [1,2,3,4,5,6]
+// const numArr3 = numArr.filter((num) => {
+//   return num % 2 === 0;
+// }
+// )
+// console.log(numArr3)
+const nameArr3 = nameArr.map((name) => {
+  let rname;
+  if (name === "なか") {
+    rname = `${name}がわ!}`;
+  } else {
+    rname = name;
+  }
+  return rname;
+});
+console.log(nameArr3);
+
+/**三項演算子
+ *
+ *
+ */
+// ある条件 ? 条件がtrueの時、条件がfalse の時
+// const val1 = 1 > 0 ? `trueです`:`falseです`;
+// console.log(val1)
+
+const num = 1699300;
+//console.log(num.toLocaleString())
+const formateNum =
+  typeof num === "number" ? num.toLocaleString() : "数値を入力";
+console.log(formateNum);
