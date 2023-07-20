@@ -118,7 +118,7 @@
 // sayHello("こういい")
 
 /**
- * スプレッド構文
+ * スプレッド構文 どうする
  * */
 //配列の展開
 // const arr1 = [1,2];
@@ -131,7 +131,7 @@
 // sumFunc(...arr1);
 
 //展開の反対でまとめる
-const arr2 = [1, 2, 3, 4, 5];
+const arr2 = [1, 2, 3, 4, 5, 6, 7];
 const [num1, num2, ...arr3] = arr2;
 console.log(num1);
 console.log(num2);
